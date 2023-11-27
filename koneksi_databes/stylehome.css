@@ -1,0 +1,46 @@
+body {
+    background: url('bgair.jpeg') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0); /* Mulai dengan bayangan transparan */
+        font-size: 10px;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Akhiri dengan bayangan yang lebih cerah */
+        font-size: 15px;
+    }
+}
+
+.welcome-text {
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto 20px;
+    color: white;
+    text-align: center;
+    animation: fadeInText ease 4s forwards;
+}
+.welcome-text h1 {
+    font-size: 10px; /* Ukuran awal teks sebelum animasi dimulai */
+    transition: font-size 1s ease; /* Transisi perubahan ukuran teks */
+}
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Sembunyikan gambar jika digunakan sebagai background */
+}
